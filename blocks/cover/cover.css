@@ -1,0 +1,8 @@
+.cover {
+    margin: auto;
+    /* background-image: url(/images/cover.jpg); */
+    max-width: 1184px;
+    /* max-height: 740px; */
+    height: 740px;
+    position: relative;
+}
