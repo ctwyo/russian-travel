@@ -1,1 +1,367 @@
-@import url(../vendor/normalize.css);
+    @import url(../vendor/normalize.css);
+    @import url(../vendor/fonts/fonts.css);
+    @import url(../blocks/page/page.css);
+    @import url(../blocks/root/root.css);
+    @import url(../blocks/header/header.css);
+    @import url(../blocks/header/__logo/header__logo.css);
+    @import url(../blocks/header/__lang-link/header__lang-link.css);
+    @import url(../blocks/header/__nav/header__nav.css);
+    @import url(../blocks/lead/lead.css);
+    @import url(../blocks/lead/__title/lead__title.css);
+    @import url(../blocks/lead/__subtitle/lead__subtitle.css);
+    @import url(../blocks/lead/__caption/lead__caption.css);
+    @import url(../blocks/lead/__image/lead__image.css);
+    @import url(../blocks/lead/__map/lead__map.css);
+    @import url(../blocks/intro/intro.css);
+    @import url(../blocks/intro/__title/intro__title.css);
+    @import url(../blocks/intro/__text/intro__text.css);
+    @import url(../blocks/intro/__list/intro__list.css);
+    @import url(../blocks/intro/__container/intro__container.css);
+    @import url(../blocks/photo-grid/photo-grid.css);
+    @import url(../blocks/photo-grid/__item/photo-grid__item.css);
+    @import url(../blocks/photo-grid/__columns/photo-grid__columns.css);
+    @import url(../blocks/places/places.css);
+    @import url(../blocks/place/place.css);
+    @import url(../blocks/place/__image/place__image.css);
+    @import url(../blocks/place/__link/place__link.css);
+    @import url(../blocks/place/__paragraph/place__paragraph.css);
+    @import url(../blocks/place/__title/place__title.css);
+    @import url(../blocks/place/__url-heading/place__url-heading.css);
+    @import url(../blocks/place/__website/place__website.css);
+    @import url(../blocks/cover/cover.css);
+    @import url(../blocks/cover/__title/cover__title.css);
+    @import url(../blocks/cover/__subtitle/cover__subtitle.css);
+    @import url(../blocks/cover/__overlay/cover__overlay.css);
+    @import url(../blocks/cover/__background/cover__background.css);
+    @import url(../blocks/cover/__text/cover__text.css);
+    @import url(../blocks/footer/footer.css);
+    @import url(../blocks/footer/__link/footer__link.css);
+    @import url(../blocks/footer/__copyright/footer__copyright.css);
+    @import url(../blocks/footer/__links/footer__links.css);
+    /* @media screen and (max-width: 1280px) {} */
+    
+    @media screen and(max-width: 1280px) {
+        .page {
+            max-width: 1184px;
+        }
+        .cover__text {}
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .page {
+            max-width: 1024px;
+        }
+        .header {
+            margin-bottom: 48px;
+        }
+        .lead {
+            max-width: 928px;
+        }
+        .lead__subtitle {
+            margin-bottom: 56px;
+        }
+        .lead__image {
+            max-width: 928px;
+            max-height: 580px;
+            margin: auto;
+        }
+        .intro {
+            max-width: 928px;
+            margin: auto;
+        }
+        .intro__list {
+            margin-bottom: 92px;
+        }
+        .intro__container {
+            margin-left: 0;
+        }
+        .photo-grid {
+            max-width: 928px;
+            gap: 0;
+        }
+        .photo-grid__item {
+            max-height: 225px;
+            height: 225px;
+        }
+        .photo-grid__columns {
+            /* max-height: 942px; */
+            gap: 14px;
+        }
+        .places {
+            max-width: 928px;
+            margin: 92px auto 92px;
+        }
+        .place__image {
+            max-width: 440px;
+            max-height: 440px;
+        }
+        .cover {
+            max-height: 640px;
+        }
+        .cover__overlay {
+            max-height: 640px;
+        }
+        .cover__background {
+            max-height: 640px;
+        }
+        .cover__title {
+            margin: 195px auto 0;
+        }
+        .footer {
+            max-width: 928px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .page {
+            max-width: 768px;
+        }
+        .header {
+            margin: 0 28px 48px;
+        }
+        .lead {
+            max-height: 862px;
+        }
+        .lead__image {
+            height: 480px;
+        }
+        .lead__map {
+            margin: 70px 18px;
+        }
+        .lead__caption {
+            margin: 8px 0 0 24px;
+        }
+        .intro {
+            width: 720px;
+        }
+        .intro__title {
+            margin-top: 88px;
+        }
+        .intro__list {
+            margin: 33px 0 88px;
+        }
+        .photo-grid {
+            max-width: 720px;
+        }
+        .photo-grid__columns {
+            gap: 16px;
+        }
+        .photo-grid__item {
+            max-height: 264px;
+            height: 264px;
+        }
+        .place__title {
+            font-weight: 900;
+            font-size: 42px;
+            line-height: 46px;
+        }
+        .place__url-heading {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .place__paragraph {
+            max-width: 352px;
+            font-size: 16px;
+            line-height: 163%;
+        }
+        .place__image {
+            max-width: 340px;
+            max-height: 340px;
+        }
+        .places {
+            max-width: 720px;
+        }
+        .place {
+            grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+            column-gap: 28px;
+        }
+        .cover {
+            max-height: 480px;
+        }
+        .cover__overlay {
+            max-height: 480px;
+        }
+        .cover__background {
+            max-height: 480px;
+        }
+        .cover__title {
+            margin: 115px auto 0;
+        }
+        .footer {
+            max-width: 720px;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .footer__links {
+            /* height: 300px; */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 48px;
+        }
+        .footer__copyright {
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: 24px;
+            margin-left: 16px;
+        }
+        .footer__link {
+            font-size: 24px;
+            line-height: 24px;
+            margin: 0 auto 32px 16px;
+        }
+        .footer__link:last-child {
+            margin-bottom: 0;
+        }
+        .footer {
+            max-width: 186px;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            /* margin-left: 16px; */
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+        }
+        .cover__subtitle {
+            max-width: 288px;
+            font-size: 14px;
+            line-height: 16px;
+            margin: 16px auto 0;
+        }
+        .cover__overlay {
+            max-width: 320px;
+            max-height: 200px;
+        }
+        .cover__title {
+            font-size: 32px;
+            line-height: 35px;
+            max-width: 288px;
+        }
+        .cover__background {
+            /* max-width: 320px; */
+            max-height: 200px;
+        }
+        .cover__title {
+            margin: 33px auto 0;
+        }
+        .cover {
+            margin-bottom: 64px;
+            max-height: 200px;
+        }
+        .places {
+            row-gap: 0;
+            margin-top: 64px;
+            margin-bottom: 66px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        }
+        .place {
+            margin: 0;
+            column-gap: 0;
+            row-gap: 0;
+            margin-bottom: 50px;
+        }
+        .place:last-child {
+            margin-bottom: 0;
+        }
+        .place__image {
+            max-width: 320px;
+            width: 100%;
+            height: 320px;
+        }
+        .place__paragraph {
+            max-width: 288px;
+        }
+        .place__paragraph:nth-child(1) {
+            margin-top: 32px;
+            margin-left: 16px;
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 163%;
+            max-width: 288px;
+        }
+        .place__paragraph:nth-child(2) {
+            margin-top: 32px;
+            margin-left: 16px;
+            /* margin-bottom: 25px; */
+            font-size: 16px;
+            line-height: 163%;
+            max-width: 288px;
+        }
+        .place__paragraph:last-child {
+            margin-bottom: 0;
+        }
+        .place__website {
+            margin-bottom: 32px;
+            max-width: 288px;
+            margin-left: 16px;
+        }
+        .place__title {
+            margin-left: 16px;
+            margin-top: 0;
+            font-size: 32px;
+            line-height: 35px;
+            margin-bottom: 32px;
+            max-width: 288px;
+        }
+        .photo-grid__columns {
+            column-gap: 0;
+            max-width: 288px;
+            row-gap: 12px;
+        }
+        .photo-grid__item {
+            max-width: 288px;
+            /* max-height: 216px; */
+            height: 216px;
+        }
+        .lead__map {
+            max-width: 304px;
+            margin: 29px 7.57px 85px 7.57px;
+        }
+        .lead__caption {
+            margin-left: 16px;
+        }
+        .header__lang-link {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        .header {
+            max-height: 42px;
+        }
+        .intro__container {
+            max-width: 288px;
+        }
+        /* .intro {
+        max-width: 288px;
+        max-height: 754px;
+    } */
+        .page {
+            max-width: 100%;
+            /* min-width: 320px; */
+        }
+        .lead__title {
+            font-size: 40px;
+            line-height: 44px;
+        }
+        .lead__subtitle {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .lead__image {
+            max-height: 200px;
+        }
+        .intro__title {
+            font-size: 32px;
+            line-height: 35px;
+            margin-top: 64px;
+        }
+        .intro__list {
+            /* margin-top: 34px;
+            margin-bottom: 64px;
+            max-width: 288px;
+            margin-left: 16px; */
+        }
+        .intro {
+            margin-bottom: 0;
+            max-width: 288px;
+        }
+    }
