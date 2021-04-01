@@ -236,13 +236,11 @@
             font-size: 32px;
             line-height: 35px;
             max-width: 288px;
+            margin: 33px auto 0;
         }
         .cover__background {
             /* max-width: 320px; */
             max-height: 200px;
-        }
-        .cover__title {
-            margin: 33px auto 0;
         }
         .cover {
             margin-bottom: 64px;
