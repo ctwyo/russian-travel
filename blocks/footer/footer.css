@@ -1,6 +1,22 @@
 .footer {
+    font-family: 'Inter', Arial, sans-serif;
     margin: 92px auto 0;
     max-width: 1184px;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin: 88px auto 0;
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        flex-direction: column;
+        margin-top: 64px;
+        max-width: 288px;
+    }
 }

@@ -1,6 +1,13 @@
 .header__logo {
     background-image: url(../../../images/logo/logo.svg);
+    background-size: 100% 100%;
     width: 176px;
     height: 52px;
-    outline: 1 px solid red;
+}
+
+@media (max-width: 320px) {
+    .header__logo {
+        max-width: 142px;
+        max-height: 42px;
+    }
 }

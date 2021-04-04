@@ -1,6 +1,17 @@
-.lead__map {
-    margin: 90px 23px 261px;
-    display: inline-block;
-    max-width: 95%;
-    /* max-width: 937px; */
-}
+    .lead__map {
+        display: block;
+        margin: auto;
+        padding: 90px 0 0;
+    }
+    
+    @media (max-width: 1024px) {
+        .lead__map {
+            max-width: 95%;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .lead__map {
+            padding-top: 29px;
+        }
+    }

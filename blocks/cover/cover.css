@@ -1,8 +1,5 @@
 .cover {
     margin: auto;
-    /* background-image: url(/images/cover.jpg); */
+    font-family: 'Inter', Arial, sans-serif;
     max-width: 1184px;
-    /* max-height: 740px; */
-    height: 740px;
-    position: relative;
 }

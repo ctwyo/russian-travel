@@ -1,12 +1,50 @@
 .cover__background {
-    /* width: 1184px; */
-    width: 100%;
-    max-height: 740px;
-    object-fit: cover;
-    background: #2A2C2F;
-    opacity: 0.8;
-    /* z-index: 2; */
-    /* position: relative; */
+    position: relative;
+    display: block;
+    text-decoration: none;
+    background-image: url(../../../images/cover.jpg);
+    background-size: 100% 100%;
+    padding: 245px 312px 245px;
+    color: #FFFFFF;
+    z-index: 1;
 }
 
-.cover__background:hover {}
+.cover__background:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2A2C2F;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.cover__background:hover::after {
+    opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+    .cover__background {
+        padding: 195px 232px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cover__background {
+        padding: 115px 104px;
+    }
+}
+
+@media (max-width: 425px) {
+    .cover__background {
+        padding: 33px 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .cover__background {
+        padding: 33px 16px;
+    }
+}
