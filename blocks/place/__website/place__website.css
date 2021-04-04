@@ -4,6 +4,12 @@
     align-self: end;
 }
 
+@media (max-width: 768px) {
+    .place__website {
+        max-width: 352px;
+    }
+}
+
 @media (max-width: 320px) {
     .place__website {
         margin-left: 16px;

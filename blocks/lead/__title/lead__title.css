@@ -8,6 +8,13 @@
     text-align: center;
 }
 
+@media (max-width: 590px) {
+    .lead__title {
+        font-size: 40px;
+        line-height: 44px;
+    }
+}
+
 @media (max-width: 475px) {
     .lead__title {
         font-size: 40px;

@@ -7,6 +7,8 @@
     padding: 245px 312px 245px;
     color: #FFFFFF;
     z-index: 1;
+    /* max-width: 1184px; */
+    /* object-fit: cover; */
 }
 
 .cover__background:after {
