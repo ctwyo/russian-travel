@@ -7,18 +7,19 @@
 @media (max-width: 1024px) {
     .intro {
         max-width: 928px;
+        margin: 0 48px 92px;
     }
 }
 
 @media (max-width: 768px) {
     .intro {
-        max-width: 720px;
-        margin-bottom: 88px;
+        margin: 0 24px 88px;
     }
 }
 
 @media (max-width: 320px) {
     .intro {
-        max-width: 288px;
+        /* max-width: 288px; */
+        margin: 0 16px 64px;
     }
 }

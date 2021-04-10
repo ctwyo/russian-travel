@@ -5,10 +5,10 @@
     margin: 0;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 665px) {
     .footer__copyright {
-        font-size: 14px;
         line-height: 14px;
-        margin-bottom: 24px;
+        /* margin-bottom: 24px; */
+        padding-left: 16px;
     }
 }

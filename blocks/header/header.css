@@ -2,7 +2,6 @@
     font-family: 'Inter', Arial, sans-serif;
     display: flex;
     justify-content: space-between;
-    max-height: 52px;
     margin: 0 48px 56px;
     padding-top: 28px;
 }
@@ -16,5 +15,13 @@
 @media (max-width: 768px) {
     .header {
         margin: 0 24px 48px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        padding-top: 16px;
+        max-width: 288px;
+        margin: 0 16px 48px;
     }
 }

@@ -1,14 +1,6 @@
 .cover__background {
     position: relative;
-    display: block;
-    text-decoration: none;
-    background-image: url(../../../images/cover.jpg);
-    background-size: 100% 100%;
-    padding: 245px 312px 245px;
     color: #FFFFFF;
-    z-index: 1;
-    /* max-width: 1184px; */
-    /* object-fit: cover; */
 }
 
 .cover__background:after {
@@ -25,28 +17,4 @@
 
 .cover__background:hover::after {
     opacity: 0.8;
-}
-
-@media (max-width: 1024px) {
-    .cover__background {
-        padding: 195px 232px;
-    }
-}
-
-@media (max-width: 768px) {
-    .cover__background {
-        padding: 115px 104px;
-    }
-}
-
-@media (max-width: 425px) {
-    .cover__background {
-        padding: 33px 16px;
-    }
-}
-
-@media (max-width: 320px) {
-    .cover__background {
-        padding: 33px 16px;
-    }
 }

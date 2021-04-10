@@ -1,8 +1,5 @@
     .lead__image {
-        background-image: url(../../../images/unsplash.jpg);
-        height: 615px;
-        background-size: cover;
-        margin: auto;
+        width: 100%;
     }
     
     @media (max-width: 1024px) {

@@ -1,24 +1,26 @@
+.cover__title {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 72px;
+    line-height: 76px;
+    max-width: 560px;
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
     .cover__title {
-        font-family: 'Inter', Arial, sans-serif;
-        font-size: 72px;
-        line-height: 76px;
-        max-width: 560px;
-        text-align: center;
-        font-weight: 900;
-        margin: auto;
-        text-decoration: none;
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 255px;
     }
-    
-    @media (max-width: 425px) {
-        .cover__title {
-            font-size: 32px;
-            line-height: 35px;
-        }
+}
+
+@media (max-width: 320px) {
+    .cover__title {
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 255px;
     }
-    
-    @media (max-width: 320px) {
-        .cover__title {
-            font-size: 32px;
-            line-height: 35px;
-        }
-    }
+}

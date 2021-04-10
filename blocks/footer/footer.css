@@ -5,17 +5,30 @@
     justify-content: space-between;
 }
 
+@media (max-width: 1199px) {
+    .footer {
+        max-width: 928px;
+        margin: 92px 48px 0;
+    }
+}
+
 @media (max-width: 768px) {
     .footer {
         margin: 88px auto 0;
         max-width: 720px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 665px) {
+    .footer {
+        flex-direction: column;
+        margin: 64px 0 24px;
     }
 }
 
 @media (max-width: 320px) {
     .footer {
-        flex-direction: column;
-        margin-top: 64px;
         max-width: 288px;
     }
 }

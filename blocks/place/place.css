@@ -1,7 +1,7 @@
 .place {
     padding: 0;
     max-width: 984px;
-    margin: 0 auto 80px;
+    margin: 0 auto;
     row-gap: 48px;
     list-style-type: none;
 }
