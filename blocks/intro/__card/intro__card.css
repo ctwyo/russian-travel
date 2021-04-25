@@ -1,4 +1,10 @@
 .intro__card {
     padding: 0;
-    margin: 0;
+    margin: 33px 0 0 0;
+}
+
+@media (max-width: 320px) {
+    .intro__card {
+        margin-top: 34px;
+    }
 }

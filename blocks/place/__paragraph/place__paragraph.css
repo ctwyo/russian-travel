@@ -1,8 +1,6 @@
 .place__paragraph {
     font-family: 'Inter', Arial, sans-serif;
     margin: 0;
-    /* max-width: 484px; */
-    max-width: 100%;
     font-size: 18px;
     line-height: 163%;
 }
@@ -11,10 +9,9 @@
     margin-top: 26px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .place__paragraph {
         font-size: 16px;
-        line-height: 163%;
         max-width: 352px;
     }
     .place__paragraph:nth-child(2) {
