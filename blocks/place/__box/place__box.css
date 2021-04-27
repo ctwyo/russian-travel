@@ -1,0 +1,9 @@
+.place__box {
+    
+}
+
+@media (max-width: 744px) {
+    .place__box {
+        margin: auto;
+    }
+}
